@@ -1,0 +1,197 @@
+@font-face {
+  font-family: "Regular";
+  src: url(../font/poppins_regular.ttf);
+}
+@font-face {
+  font-family: "Medium";
+  src: url(../font/poppins_medium.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+#root,
+article {
+  height: 100%;
+}
+
+body {
+  font-family: "Regular", sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.icon, .others, .profile {
+  padding: 2rem 0;
+  height: 100%;
+}
+
+.profile {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+#profile-pics {
+  height: 300px;
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 2px 5px 16px 5px rgba(180, 180, 180, 0.25);
+  overflow: hidden;
+  margin-top: 1.4rem;
+}
+#profile-pics img {
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  left: -20px;
+}
+
+.name-tag {
+  text-align: center;
+  margin: 0.9rem 0;
+  line-height: 36px;
+}
+.name-tag h1 {
+  font-family: "Medium";
+  font-size: 1.8em;
+  font-style: normal;
+  font-weight: 500;
+  cursor: pointer;
+}
+.name-tag span {
+  font-weight: 400;
+  font-size: 1.2em;
+  color: #979797;
+  cursor: pointer;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+}
+.social-media a {
+  text-decoration: none;
+  padding: 0 1.2rem;
+  font-size: 2.5em;
+  color: #000;
+  transition: 1s;
+}
+.social-media a:hover {
+  color: rgb(121, 121, 121);
+}
+
+button {
+  width: 10vw;
+  padding: 0.6rem 1.2rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #000;
+  color: #fff;
+  font-weight: 500;
+  font-family: "Medium";
+  font-size: 0.98em;
+  transition: 1s;
+  filter: drop-shadow(1px 1px 5px rgb(189, 189, 189));
+}
+
+button:hover {
+  background-color: rgb(26, 26, 26);
+}
+
+.others .skills-ctn {
+  padding-left: 10rem;
+  display: flex;
+  flex-direction: row;
+}
+.others .skills-ctn .skill-dv {
+  width: 100%;
+  position: relative;
+  right: -20px;
+  border: 2px dashed #d6d6d6;
+  border-radius: 10px;
+  padding: 1.2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  box-shadow: 1px 1px 5px #e1dede;
+}
+.others .skills-ctn .skill-dv .skill-icon-name {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 30px;
+  text-transform: lowercase;
+}
+.others .skills-ctn .skill-dv .skill-icon-name span {
+  font-size: 1.2em;
+  color: #979797;
+  font-weight: 500;
+  font-family: "Medium";
+}
+.others .skills-ctn .skill-dv .skill-icon-name span::before {
+  content: "#";
+  color: #2ad000;
+}
+.others .skills-ctn .skill-dv .skill-icon-name span + div {
+  text-align: left;
+  width: auto;
+}
+.others .skills-ctn .skill-dv .skill-icon-name span + div > i {
+  padding: 0.6rem;
+  color: #adff98;
+  text-align: left;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 1.2rem 2rem;
+}
+.icon span {
+  font-size: 1.1em;
+  color: #737373;
+  font-family: "Medium";
+}
+.icon i {
+  font-size: 4em;
+  justify-self: flex-start;
+}
+
+.academic {
+  flex-direction: column !important;
+}
+.academic .skill-icon-name {
+  flex-direction: column !important;
+  margin-bottom: 1rem;
+}
+.academic .skill-icon-name p {
+  text-transform: capitalize;
+  font-size: 1.2em;
+  color: #979797;
+  font-family: "Medium";
+}
+.academic .skill-icon-name p + p {
+  color: #2ad000;
+}
+
+#other_ctn {
+  display: none;
+}
+
+footer {
+  padding: 1.2rem 0;
+  text-align: center;
+  font-size: 0.987em;
+  color: #979797;
+}
+
+/*# sourceMappingURL=theme.css.map */

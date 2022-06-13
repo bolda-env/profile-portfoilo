@@ -1,0 +1,35 @@
+// Fonts
+@font-face {
+  font-family: "Regular";
+  src: url(../font/poppins_regular.ttf);
+}
+
+@font-face {
+  font-family: "Medium";
+  src: url(../font/poppins_medium.ttf);
+}
+
+// vars
+$regular-font: "Regular";
+$medium-font: "Medium";
+
+// Setup
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+#root,
+article {
+  height: 100%;
+  //   width: 100%;
+}
+
+body {
+  font-family: $regular-font, sans-serif;
+  background-color: #fff;
+  overflow-x: hidden;
+  height: 100%;
+}

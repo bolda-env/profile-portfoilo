@@ -1,17 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+// Component
+import BioData from "./Composition/BioData";
+import Others from "./Composition/Others";
+// CSS
+import "./assets/theme.css";
+
+function Profile() {
+  return (
+    <>
+      <BioData />
+      <Others />
+    </>
+  );
+}
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Profile></Profile>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
